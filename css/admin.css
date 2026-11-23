@@ -1,0 +1,74 @@
+:root {
+    --cine-bg: #fdf5dc;       /* Fondo crema suave */
+    --cine-red: #d32323;      /* Rojo principal */
+    --cine-red-hover: #b01b1b;
+    --cine-yellow: #ffd966;   
+}
+
+body {
+    background-color: var(--cine-bg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* -------------------------------------------------------------- Textos y botones----*/
+.text-cine-red {
+    color: var(--cine-red);
+}
+
+.btn-cine {
+    background-color: var(--cine-red);
+    border-color: var(--cine-red);
+    color: white;
+}
+
+.btn-cine:hover {
+    background-color: var(--cine-red-hover);
+    border-color: var(--cine-red-hover);
+    color: white;
+}
+
+
+
+.btn-editar:hover {
+    background-color: #d32323;
+    color: white;
+    border-color: var(--cine-red-hover);
+}
+
+/* ---------------------------------- Franja decorativa roja y blanca bajo el navbar---------------------------- */
+.cinema-border {
+    height: 14px;
+    width: 100%;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--cine-red) 0px,
+        var(--cine-red) 24px,
+        #ffffff 24px,
+        #ffffff 48px
+    );
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/*----------------------------------------- Estilos de la tabla --------------------------------------*/
+.table-cine-header th {
+    background-color: var(--cine-yellow);
+    color: #212529;
+    font-weight: 700;
+}
+
+.bg-cine-cream td {
+    background-color: var(--cine-bg);
+}
+
+.badge-cartelera {
+    background-color: var(--cine-yellow);
+    color: #212529;
+    font-weight: 600;
+}
+
+/* Tamaño mini-póster */
+.poster-placeholder {
+    width: 38px;
+    height: 52px;
+    font-size: 1.2rem;
+}

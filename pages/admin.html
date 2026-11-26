@@ -14,27 +14,44 @@
 <body>
 
     <!-- Navbar Superior -->
-    <nav class="navbar bg-white py-3">
-        <div class="container">
-            <a class="btn btn-editar navbar-brand fw-bold text-cine-red fs-3 d-flex align-items-center gap-2" href="#">
-                🍿 Taquilla
-            </a>
-            <div class="d-flex align-items-center gap-3">
-                <a href="#" class="text-dark text-decoration-none fw-semibold">Ver la sala</a>
-                <button class="btn btn-outline-cine rounded-pill px-4 fw-semibold">Cerrar sesión</button>
+    <header class="text-white">
+        <nav class="navbar navbar-expand-lg px-5" >
+            <div class="container-fluid">
+                <img src="../img_admin/Logotipo_POPCINE_Cinematografico_3D.png" alt="logo" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white link-danger" aria-current="page" href="#">Sala Principal / Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-danger text-white" href="#">Experiencias VIP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-danger text-white" href="#">Confiteria</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <a href="#" class="btn btn-iniciar" type="submit">Cerrar Sección</a>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Borde decorativo estilo marquesina/toldo de cine -->
     <div class="cinema-border"></div>
 
     <!-- Contenido Principal -->
-    <main class="container my-5">
+    <main class="container  my-5 rounded-4" >
         
         <!-- Encabezado y botones de acción -->
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
-            <h1 class="text-cine-red fw-bold fs-2 m-0">Mis películas</h1>
+            <h1 class="text-cine-red fw-bold fs-2 m-0">🍿 Mis películas</h1>
             <div class="d-flex gap-2">
                 <button class="btn btn-cine rounded-pill px-4 fw-semibold">+ Agregar película</button>
             </div>
@@ -69,17 +86,17 @@
                     </tr>
                 </thead>
                 <tbody class="bg-cine-cream">
-                    <!-- pelicula 1 -->
-                    <tr class="border-bottom border-warning-subtle">
+                    <!---------------------------------------------------------- pelicula 1 -->
+                    <tr class="border-bottom border-dark-subtle">
                         <td class="ps-4 py-3">
                             <div class="poster-placeholder bg-warning text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
                                 <img src="" alt="">
                             </div>
                         </td>
-                        <td class="fw-bold text-dark">El Rey León</td>
-                        <td class="text-muted">Animación</td>
-                        <td class="text-muted">88 min</td>
-                        <td class="text-muted">Todo público</td>
+                        <td class="fw-bold titulo_peli">El Rey León</td>
+                        <td class="text-white">Animación</td>
+                        <td class="text-white">88 min</td>
+                        <td class="text-white">Todo público</td>
                         <td>
                             <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
                         </td>
@@ -89,139 +106,10 @@
                         </td>
                     </tr>
 
-                    <!-- pelicula 2 -->
-                    <tr class="border-bottom border-warning-subtle">
-                        <td class="ps-4 py-3">
-                            <div class="poster-placeholder bg-primary text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
-                                <img src="" alt=""><!--  -->
-                            </div>
-                        </td>
-                        <td class="fw-bold text-dark">Volver al Futuro</td>
-                        <td class="text-muted">Ciencia ficción</td>
-                        <td class="text-muted">116 min</td>
-                        <td class="text-muted">+7</td>
-                        <td>
-                            <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
-                        </td>
-                        <td class="pe-4">
-                            <button class="btn btn-sm btn-editar  rounded-pill px-3 fw-semibold me-1">Editar</button>
-                            <button class="btn btn-sm btn-cine rounded-pill px-3 fw-semibold">Eliminar</button>
-                        </td>
-                    </tr>
+                    
+                    
 
-                    <!---------------------------------------------------- pelicula 3 -->
-                    <tr>
-                        <td class="ps-4 py-3">
-                            <div class="poster-placeholder bg-success text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
-                                
-                            </div>
-                        </td>
-                        <td class="fw-bold text-dark">Coco</td>
-                        <td class="text-muted">Animación</td>
-                        <td class="text-muted">105 min</td>
-                        <td class="text-muted">Todo público</td>
-                        <td>
-                            <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
-                        </td>
-                        <td class="pe-4">
-                            <button class="btn btn-sm btn-editar rounded-pill px-3 fw-semibold me-1">Editar</button>
-                            <button class="btn btn-sm btn-cine rounded-pill px-3 fw-semibold">Eliminar</button>
-                        </td>
-                    </tr>
-                    <!------------------------------------------------------ pelicula 4 -->
-                    <tr>
-                        <td class="ps-4 py-3">
-                            <div class="poster-placeholder bg-success text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
-                                
-                            </div>
-                        </td>
-                        <td class="fw-bold text-dark">Spider-Man: Un Nuevo Universo</td>
-                        <td class="text-muted">Animación</td>
-                        <td class="text-muted">117 min</td>
-                        <td class="text-muted">+7</td>
-                        <td>
-                            <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
-                        </td>
-                        <td class="pe-4">
-                            <button class="btn btn-sm btn-editar rounded-pill px-3 fw-semibold me-1">Editar</button>
-                            <button class="btn btn-sm btn-cine rounded-pill px-3 fw-semibold">Eliminar</button>
-                        </td>
-                    </tr>
-                    <!------------------------------------------------------- pelicula 5 -->
-                    <tr>
-                        <td class="ps-4 py-3">
-                            <div class="poster-placeholder bg-success text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
-                                
-                            </div>
-                        </td>
-                        <td class="fw-bold text-dark">Jurassic Park</td>
-                        <td class="text-muted">Aventura</td>
-                        <td class="text-muted">127 min</td>
-                        <td class="text-muted">+12</td>
-                        <td>
-                            <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
-                        </td>
-                        <td class="pe-4">
-                            <button class="btn btn-sm btn-editar rounded-pill px-3 fw-semibold me-1">Editar</button>
-                            <button class="btn btn-sm btn-cine rounded-pill px-3 fw-semibold">Eliminar</button>
-                        </td>
-                    </tr>
-                    <!------------------------------------------------------- pelicula 6 -->
-                    <tr>
-                        <td class="ps-4 py-3">
-                            <div class="poster-placeholder bg-success text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
-                                
-                            </div>
-                        </td>
-                        <td class="fw-bold text-dark">Interestelar</td>
-                        <td class="text-muted">Ciencia ficción</td>
-                        <td class="text-muted">160 min</td>
-                        <td class="text-muted">+12</td>
-                        <td>
-                            <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
-                        </td>
-                        <td class="pe-4">
-                            <button class="btn btn-sm btn-editar rounded-pill px-3 fw-semibold me-1">Editar</button>
-                            <button class="btn btn-sm btn-cine rounded-pill px-3 fw-semibold">Eliminar</button>
-                        </td>
-                    </tr>
-                    <!------------------------------------------------------- pelicula 7 -->
-                    <tr>
-                        <td class="ps-4 py-3">
-                            <div class="poster-placeholder bg-success text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
-                                
-                            </div>
-                        </td>
-                        <td class="fw-bold text-dark">El Conjuro</td>
-                        <td class="text-muted">Terror</td>
-                        <td class="text-muted">112 min</td>
-                        <td class="text-muted">+15</td>
-                        <td>
-                            <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
-                        </td>
-                        <td class="pe-4">
-                            <button class="btn btn-sm btn-editar rounded-pill px-3 fw-semibold me-1">Editar</button>
-                            <button class="btn btn-sm btn-cine rounded-pill px-3 fw-semibold">Eliminar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="ps-4 py-3">
-                            <div class="poster-placeholder bg-success text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
-                                
-                            </div>
-                        </td>
-                        <td class="fw-bold text-dark">Encanto</td>
-                        <td class="text-muted">Animación</td>
-                        <td class="text-muted">102 min</td>
-                        <td class="text-muted">Todo público</td>
-                        <td>
-                            <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
-                        </td>
-                        <td class="pe-4">
-                            <button class="btn btn-sm btn-editar rounded-pill px-3 fw-semibold me-1">Editar</button>
-                            <button class="btn btn-sm btn-cine rounded-pill px-3 fw-semibold">Eliminar</button>
-                        </td>
-                    </tr>
+                    
                    
                 </tbody>
             </table>

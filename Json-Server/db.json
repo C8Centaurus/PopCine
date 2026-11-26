@@ -1,0 +1,204 @@
+{
+  "peliculas": [
+    {
+      "id": "1",
+      "titulo": "Interestelar",
+      "genero": "Ciencia ficción",
+      "duracion": "169 min",
+      "horario": "19:30",
+      "sala": "Sala 1",
+      "precio": 18000,
+      "disponible": true
+    },
+    {
+      "id": "2",
+      "titulo": "Duna: Parte Dos",
+      "genero": "Ciencia ficción",
+      "duracion": "166 min",
+      "horario": "20:15",
+      "sala": "Sala 1",
+      "precio": 20000,
+      "disponible": true
+    },
+    {
+      "id": "3",
+      "titulo": "Spider-Man: A través del Spider-Verso",
+      "genero": "Animación",
+      "duracion": "140 min",
+      "horario": "16:00",
+      "sala": "Sala 2",
+      "precio": 17000,
+      "disponible": true
+    },
+    {
+      "id": "4",
+      "titulo": "El Caballero de la Noche",
+      "genero": "Acción",
+      "duracion": "152 min",
+      "horario": "21:00",
+      "sala": "Sala 1",
+      "precio": 18000,
+      "disponible": true
+    },
+    {
+      "id": "5",
+      "titulo": "Intensamente 2",
+      "genero": "Animación",
+      "duracion": "96 min",
+      "horario": "14:30",
+      "sala": "Sala 3",
+      "precio": 16000,
+      "disponible": true
+    },
+    {
+      "id": "6",
+      "titulo": "Oppenheimer",
+      "genero": "Drama",
+      "duracion": "180 min",
+      "horario": "18:00",
+      "sala": "Sala 4",
+      "precio": 19000,
+      "disponible": true
+    },
+    {
+      "id": "7",
+      "titulo": "John Wick 4",
+      "genero": "Acción",
+      "duracion": "169 min",
+      "horario": "21:30",
+      "sala": "Sala 2",
+      "precio": 18500,
+      "disponible": true
+    },
+    {
+      "id": "8",
+      "titulo": "Parásitos",
+      "genero": "Suspenso",
+      "duracion": "132 min",
+      "horario": "17:45",
+      "sala": "Sala 4",
+      "precio": 17000,
+      "disponible": true
+    },
+    {
+      "id": "9",
+      "titulo": "Toy Story",
+      "genero": "Animación",
+      "duracion": "81 min",
+      "horario": "13:30",
+      "sala": "Sala 3",
+      "precio": 15000,
+      "disponible": true
+    },
+    {
+      "id": "10",
+      "titulo": "Inception",
+      "genero": "Ciencia ficción",
+      "duracion": "148 min",
+      "horario": "19:00",
+      "sala": "Sala 2",
+      "precio": 18000,
+      "disponible": true
+    },
+    {
+      "id": "11",
+      "titulo": "Gladiador",
+      "genero": "Aventura",
+      "duracion": "155 min",
+      "horario": "20:00",
+      "sala": "Sala 4",
+      "precio": 18000,
+      "disponible": true
+    },
+    {
+      "id": "12",
+      "titulo": "Coco",
+      "genero": "Animación",
+      "duracion": "105 min",
+      "horario": "15:00",
+      "sala": "Sala 3",
+      "precio": 16000,
+      "disponible": false
+    },
+    {
+      "id": "13",
+      "titulo": "El Padrino",
+      "genero": "Crimen",
+      "duracion": "175 min",
+      "horario": "18:30",
+      "sala": "Sala 5",
+      "precio": 18500,
+      "disponible": true
+    },
+    {
+      "id": "14",
+      "titulo": "Mad Max: Furia en el camino",
+      "genero": "Acción",
+      "duracion": "120 min",
+      "horario": "22:00",
+      "sala": "Sala 1",
+      "precio": 19000,
+      "disponible": true
+    },
+    {
+      "id": "15",
+      "titulo": "La La Land",
+      "genero": "Romance",
+      "duracion": "128 min",
+      "horario": "17:00",
+      "sala": "Sala 5",
+      "precio": 17000,
+      "disponible": true
+    },
+    {
+      "id": "16",
+      "titulo": "El viaje de Chihiro",
+      "genero": "Fantasía",
+      "duracion": "125 min",
+      "horario": "16:15",
+      "sala": "Sala 3",
+      "precio": 17500,
+      "disponible": true
+    },
+    {
+      "id": "17",
+      "titulo": "Alien: El octavo pasajero",
+      "genero": "Terror",
+      "duracion": "117 min",
+      "horario": "21:45",
+      "sala": "Sala 5",
+      "precio": 17500,
+      "disponible": true
+    },
+    {
+      "id": "18",
+      "titulo": "Whiplash",
+      "genero": "Drama",
+      "duracion": "107 min",
+      "horario": "19:15",
+      "sala": "Sala 4",
+      "precio": 17000,
+      "disponible": true
+    },
+    {
+      "id": "19",
+      "titulo": "Jurassic Park",
+      "genero": "Aventura",
+      "duracion": "127 min",
+      "horario": "15:30",
+      "sala": "Sala 2",
+      "precio": 17500,
+      "disponible": false
+    },
+    {
+      "id": "20",
+      "titulo": "Blade Runner 2049",
+      "genero": "Ciencia ficción",
+      "duracion": "164 min",
+      "horario": "20:45",
+      "sala": "Sala 5",
+      "precio": 19000,
+      "disponible": true
+    }
+  ]
+}

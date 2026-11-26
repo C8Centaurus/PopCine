@@ -54,35 +54,85 @@
         <!-- CARTELERA -->
         <section id="cartelera" class="seccion">
             <div class="container">
-                <h2>Cartelera</h2>
-                <div class="row g-4">
-                    <div class="col-6 col-md-3">
-                        <div class="tarjeta">
-                            <img src="./landing.img/dune.jpg" alt="Dune 2">
+                <small class="sobretitulo">Cartelera y próximos estrenos</small>
+                <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+                    <h2 class="titulo">Explora toda la programación de la sala</h2>
+                    <div class="pestanas">
+                        <button class="pestana activa">En Cartelera</button>
+                        <button class="pestana">Próximamente</button>
+                    </div>
+                </div>
+
+                <div class="buscador">
+                    <input type="text" class="form-control" placeholder="Buscar película, director, sala o actor...">
+                    <div class="chips">
+                        <button class="chip activo">Todos</button>
+                        <button class="chip">IMAX 3D</button>
+                        <button class="chip">Ciencia Ficción</button>
+                        <button class="chip">Drama / Suspenso</button>
+                        <button class="chip">Animación VIP</button>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-6 col-lg-3">
+                        <article class="peli">
+                            <div class="poster">
+                                <span class="formato">IMAX Laser</span>
+                                <span class="nota">★ 8.9</span>
+                                <img src="./landing.img/dune.jpg" alt="Dune: Parte Dos">
+                                <button class="play">▶</button>
+                            </div>
                             <h3>Dune: Parte Dos</h3>
-                            <small>IMAX · 166 min</small>
-                        </div>
+                            <p>La épica travesía de Paul Atreides en el inhóspito planeta Arrakis.</p>
+                            <div class="horas"><span>16:30</span><span>19:45</span><span>22:15 IMAX</span></div>
+                            <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
+                        </article>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <div class="tarjeta">
-                            <img src="./landing.img/alien.jpg" alt="Alien: Romulus">
+
+                    <div class="col-6 col-lg-3">
+                        <article class="peli">
+                            <div class="poster">
+                                <span class="formato">Atmos 2D</span>
+                                <span class="nota">★ 7.8</span>
+                                <img src="./landing.img/alien.jpg" alt="Alien: Romulus">
+                                <button class="play">▶</button>
+                            </div>
                             <h3>Alien: Romulus</h3>
-                            <small>3D · 119 min</small>
-                        </div>
+                            <p>Jóvenes colonos espaciales descubren la forma de vida más aterradora.</p>
+                            <div class="horas"><span>18:00</span><span>20:30</span><span>23:00 VIP</span></div>
+                            <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
+                        </article>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <div class="tarjeta">
-                            <img src="./landing.img/joker.jpg" alt="Joker 2">
+
+                    <div class="col-6 col-lg-3">
+                        <article class="peli">
+                            <div class="poster">
+                                <span class="formato">Digital 4K</span>
+                                <span class="nota">★ 8.1</span>
+                                <img src="./landing.img/joker.jpg" alt="Joker: Folie à Deux">
+                                <button class="play">▶</button>
+                            </div>
                             <h3>Joker: Folie à Deux</h3>
-                            <small>2D · 138 min</small>
-                        </div>
+                            <p>Arthur Fleck internado en Arkham encuentra la música y a su inesperada compañera.</p>
+                            <div class="horas"><span>17:15</span><span>21:00</span></div>
+                            <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
+                        </article>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <div class="tarjeta">
-                            <img src="./landing.img/oppenheimer.jpg" alt="Oppenheimer">
+
+                    <div class="col-6 col-lg-3">
+                        <article class="peli">
+                            <div class="poster">
+                                <span class="formato">70mm IMAX</span>
+                                <span class="nota">★ 9.2</span>
+                                <img src="./landing.img/oppenheimer.jpg" alt="Oppenheimer">
+                                <button class="play">▶</button>
+                            </div>
                             <h3>Oppenheimer</h3>
-                            <small>IMAX · 180 min</small>
-                        </div>
+                            <p>La historia del físico J. Robert Oppenheimer y el desarrollo de la bomba atómica.</p>
+                            <div class="horas"><span>15:00</span><span>19:30 70mm</span></div>
+                            <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
+                        </article>
                     </div>
                 </div>
             </div>

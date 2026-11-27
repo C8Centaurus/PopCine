@@ -1,0 +1,150 @@
+:root{
+  --rojo:#D8232A;
+  --rojo-oscuro:#A5151B;
+}
+ 
+/* ====== Fondo: sala oscura con el haz de luz del proyector ====== */
+body{
+  min-height:100vh;
+  min-height:100dvh;               /* en el celular cuenta bien la barra del navegador */
+  background:radial-gradient(ellipse at 50% 35%, #4a0d10, #120505 70%);
+  font-family:system-ui, sans-serif;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:linear-gradient(180deg, rgba(255,236,190,.16), rgba(255,236,190,0) 65%);
+  clip-path:polygon(44% 0, 56% 0, 100% 100%, 0 100%);
+}
+
+.text-danger{ color:var(--rojo) !important; }
+.btn-danger{
+  --bs-btn-bg:var(--rojo);
+  --bs-btn-border-color:var(--rojo);
+  --bs-btn-hover-bg:var(--rojo-oscuro);
+  --bs-btn-hover-border-color:var(--rojo-oscuro);
+  --bs-btn-active-bg:var(--rojo-oscuro);
+  --bs-btn-active-border-color:var(--rojo-oscuro);
+}
+ 
+.volver{ z-index:6; }
+.pista{ z-index:6; }
+
+.cubeta{
+  position:relative;
+  z-index:1;
+  width:min(240px, 62vw, 42vh);
+  container-type:inline-size;
+  background:none;
+  border:0;
+  padding:0;
+  cursor:pointer;
+}
+.cubeta:focus-visible{ outline:3px solid #ffc107; outline-offset:8px; }
+.balde{
+  height:108cqw;
+  background:linear-gradient(90deg, #A5151B, #D8232A 30%, #EE4046 50%, #D8232A 70%, #A5151B);
+  clip-path:polygon(0 0, 100% 0, 88% 100%, 12% 100%);
+  border-top:5.8cqw solid #A5151B;
+  display:grid;
+  place-items:center;
+}
+.logo-cubeta{
+  width:70cqw;
+  height:auto;
+  background:black;
+  padding:4cqw;
+  border-radius:5cqw;
+  transform:rotate(-4deg);
+}
+.palomitas{
+  position:absolute;
+  top:-12.5cqw;
+  left:50%;
+  width:25cqw;
+  height:25cqw;
+  margin-left:-12.5cqw;
+  border-radius:50%;
+  background:#FFF4CC;
+  filter:drop-shadow(0 2px 2px rgba(0,0,0,.35));
+  box-shadow:
+    -35cqw 6.7cqw 0 #FFF4CC,
+    -17.5cqw -2.5cqw 0 #FFF4CC,
+     17.5cqw -2.5cqw 0 #FFF4CC,
+     35cqw 6.7cqw 0 #FFF4CC,
+     0 -9.2cqw 0 #FFF4CC,
+    -25.8cqw 14.2cqw 0 #FFF4CC,
+     25.8cqw 14.2cqw 0 #FFF4CC;
+}
+.vuela{
+  position:fixed;
+  z-index:20;
+  pointer-events:none;
+  border-radius:50%;
+  background:#FFF4CC;
+  box-shadow:-7px 4px 0 #FFF4CC, 7px 3px 0 #FFF4CC, 0 -6px 0 #FFF4CC;
+}
+capa{
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  display:flex;
+  padding:16px;
+  overflow-y:auto;                 
+  z-index:5;
+}
+.tarjeta{
+  width:100%;
+  max-width:420px;
+  margin:auto;                     
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.55), 0 0 0 4px rgba(255,255,255,.07) !important;
+}
+.tarjeta-cab{
+  background:linear-gradient(135deg, var(--rojo), var(--rojo-oscuro));
+  padding:18px 16px;
+  text-align:center;
+  border-bottom:3px dashed rgba(255,255,255,.55);   
+}
+.logo-tarjeta{
+  width:min(190px, 60%);
+  height:auto;
+  background:black;
+  padding:8px 12px;
+  border-radius:14px;
+  box-shadow:0 3px 8px rgba(0,0,0,.3);
+}
+.tarjeta-cuerpo{ padding:1.5rem; }
+ 
+
+.campo-clave .form-control{ padding-right:4.5rem !important; }
+.ver-clave{
+  position:absolute;
+  top:50%;
+  right:12px;
+  transform:translateY(-50%);
+  border:0;
+  background:none;
+  color:var(--rojo);
+  font-weight:700;
+  font-size:.9rem;
+  z-index:5;
+}
+.tarjeta .form-control.is-invalid{ background-image:none; }
+ 
+
+@media (max-width:420px){
+  .tarjeta-cuerpo{ padding:1.1rem; }
+  .logo-tarjeta{ width:150px; }
+}
+@media (max-height:520px){
+  .tarjeta-cab{ padding:8px; }
+  .logo-tarjeta{ width:110px; padding:4px 8px; }
+  .tarjeta-cuerpo{ padding:.9rem 1.1rem; }
+  .pista{ display:none; }
+}
+ 
+.d-none{ display:none !important; }

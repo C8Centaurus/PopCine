@@ -19,7 +19,7 @@
     <button id="cubeta" type="button" class="cubeta" aria-label="Abrir la cubeta de PopCine para iniciar sesión">
         <div class="palomitas" id="palomitas" aria-hidden="true"></div>
         <div class="balde">
-            <img src="logo.png" alt="PopCine" class="logo-cubeta">
+            <img src="../img_login/logo.png" alt="PopCine" class="logo-cubeta">
         </div>
     </button>
 
@@ -33,31 +33,24 @@
     <div id="tarjeta" class="card tarjeta border-0 shadow-lg rounded-4">
 
         <div class="tarjeta-cab reveal">
-            <img src="logo.png" alt="PopCine" class="logo-tarjeta">
+            <img src="../img_login/logo.png" alt="PopCine" class="logo-tarjeta">
         </div>
 
         <div class="card-body tarjeta-cuerpo">
             <h1 class="h4 fw-bold text-danger mb-1 reveal">¡Bienvenido a la taquilla!</h1>
             <p class="text-muted mb-3 reveal">Inicia sesión para administrar la cartelera.</p>
 
-            <div
-                class="alert alert-warning py-2 small mb-3 reveal d-flex justify-content-between align-items-center gap-2 flex-wrap">
-                <span>Cuenta de prueba:<br><strong>admin@cinecatalogo.com</strong><br>Clave:
-                    <strong>palomitas123</strong></span>
-                <button type="button" id="usarPrueba" class="btn btn-sm btn-dark rounded-pill">Usar cuenta</button>
-            </div>
-
             <form id="formulario" novalidate>
                 <div class="form-floating mb-3 reveal">
                     <input type="email" class="form-control" id="correo" placeholder="Correo" autocomplete="username">
-                    <label for="correo">Correo</label>
+                    <label for="correo">Correo: admin@cinecatalogo.com </label>
                     <div class="invalid-feedback">Escribe tu correo.</div>
                 </div>
 
                 <div class="form-floating mb-3 campo-clave reveal">
                     <input type="password" class="form-control" id="clave" placeholder="Contraseña"
                         autocomplete="current-password">
-                    <label for="clave">Contraseña</label>
+                    <label for="clave">Contraseña: palomitas123 </label>
                     <button type="button" id="verClave" class="ver-clave" aria-label="Mostrar contraseña"
                         aria-pressed="false">Ver</button>
                     <div class="invalid-feedback">Escribe tu contraseña.</div>

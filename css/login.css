@@ -55,7 +55,7 @@ body::before{
 .logo-cubeta{
   width:70cqw;
   height:auto;
-  background:#fff;
+  background:black;
   padding:4cqw;
   border-radius:5cqw;
   transform:rotate(-4deg);
@@ -112,7 +112,7 @@ capa{
 .logo-tarjeta{
   width:min(190px, 60%);
   height:auto;
-  background:#fff;
+  background:black;
   padding:8px 12px;
   border-radius:14px;
   box-shadow:0 3px 8px rgba(0,0,0,.3);

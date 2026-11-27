@@ -104,3 +104,56 @@ function abrirLogin() {
     });
 }
 
+cubeta.addEventListener("click", abrirLogin);
+ 
+
+document.getElementById("usarPrueba").addEventListener("click", function () {
+  correo.value = CORREO_OK;
+  clave.value = CLAVE_OK;
+  correo.classList.remove("is-invalid");
+  clave.classList.remove("is-invalid");
+  errorGeneral.classList.add("d-none");
+});
+ 
+const botonVer = document.getElementById("verClave");
+botonVer.addEventListener("click", function () {
+  const estaOculta = clave.type === "password";
+  clave.type = estaOculta ? "text" : "password";
+  botonVer.textContent = estaOculta ? "Ocultar" : "Ver";
+  botonVer.setAttribute("aria-pressed", estaOculta);
+  botonVer.setAttribute("aria-label", estaOculta ? "Ocultar contraseña" : "Mostrar contraseña");
+});
+ 
+
+formulario.addEventListener("submit", function (evento) {
+  evento.preventDefault();   
+ 
+  const correoVacio = correo.value.trim() === "";
+  const claveVacia = clave.value === "";
+ 
+  correo.classList.toggle("is-invalid", correoVacio);
+  clave.classList.toggle("is-invalid", claveVacia);
+  errorGeneral.classList.add("d-none");
+ 
+  if (correoVacio || claveVacia) return;
+ 
+  if (correo.value.trim() === CORREO_OK && clave.value === CLAVE_OK) {
+    sessionStorage.setItem("cine_sesion", "1");
+    window.location.href = "admin.html";   
+  } else {
+    errorGeneral.textContent = "Correo o contraseña incorrectos. Revisa la cuenta de prueba.";
+    errorGeneral.classList.remove("d-none");
+    if (hayGsap) {
+      gsap.fromTo(tarjeta, { x: -10 }, { x: 0, duration: 0.5, ease: "elastic.out(1, 0.3)" });
+    }
+  }
+});
+
+function revisarSesion(){
+    if(!sessionStorage.getItem("cine_sesion")){
+      document.documentElement.classList.add("sin-sesion");
+      location.replace("login.html");
+    }
+  }
+  revisarSesion();
+  addEventListener("pageshow", revisarSesion);

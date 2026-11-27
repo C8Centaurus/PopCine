@@ -19,3 +19,44 @@ body::before{
   background:linear-gradient(180deg, rgba(255,236,190,.16), rgba(255,236,190,0) 65%);
   clip-path:polygon(44% 0, 56% 0, 100% 100%, 0 100%);
 }
+
+.text-danger{ color:var(--rojo) !important; }
+.btn-danger{
+  --bs-btn-bg:var(--rojo);
+  --bs-btn-border-color:var(--rojo);
+  --bs-btn-hover-bg:var(--rojo-oscuro);
+  --bs-btn-hover-border-color:var(--rojo-oscuro);
+  --bs-btn-active-bg:var(--rojo-oscuro);
+  --bs-btn-active-border-color:var(--rojo-oscuro);
+}
+ 
+.volver{ z-index:6; }
+.pista{ z-index:6; }
+
+.cubeta{
+  position:relative;
+  z-index:1;
+  width:min(240px, 62vw, 42vh);
+  container-type:inline-size;
+  background:none;
+  border:0;
+  padding:0;
+  cursor:pointer;
+}
+.cubeta:focus-visible{ outline:3px solid #ffc107; outline-offset:8px; }
+.balde{
+  height:108cqw;
+  background:linear-gradient(90deg, #A5151B, #D8232A 30%, #EE4046 50%, #D8232A 70%, #A5151B);
+  clip-path:polygon(0 0, 100% 0, 88% 100%, 12% 100%);
+  border-top:5.8cqw solid #A5151B;
+  display:grid;
+  place-items:center;
+}
+.logo-cubeta{
+  width:70cqw;
+  height:auto;
+  background:#fff;
+  padding:4cqw;
+  border-radius:5cqw;
+  transform:rotate(-4deg);
+}

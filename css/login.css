@@ -87,3 +87,49 @@ body::before{
   background:#FFF4CC;
   box-shadow:-7px 4px 0 #FFF4CC, 7px 3px 0 #FFF4CC, 0 -6px 0 #FFF4CC;
 }
+capa{
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  display:flex;
+  padding:16px;
+  overflow-y:auto;                 
+  z-index:5;
+}
+.tarjeta{
+  width:100%;
+  max-width:420px;
+  margin:auto;                     
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.55), 0 0 0 4px rgba(255,255,255,.07) !important;
+}
+.tarjeta-cab{
+  background:linear-gradient(135deg, var(--rojo), var(--rojo-oscuro));
+  padding:18px 16px;
+  text-align:center;
+  border-bottom:3px dashed rgba(255,255,255,.55);   
+}
+.logo-tarjeta{
+  width:min(190px, 60%);
+  height:auto;
+  background:#fff;
+  padding:8px 12px;
+  border-radius:14px;
+  box-shadow:0 3px 8px rgba(0,0,0,.3);
+}
+.tarjeta-cuerpo{ padding:1.5rem; }
+ 
+
+.campo-clave .form-control{ padding-right:4.5rem !important; }
+.ver-clave{
+  position:absolute;
+  top:50%;
+  right:12px;
+  transform:translateY(-50%);
+  border:0;
+  background:none;
+  color:var(--rojo);
+  font-weight:700;
+  font-size:.9rem;
+  z-index:5;
+}

@@ -107,14 +107,6 @@ function abrirLogin() {
 cubeta.addEventListener("click", abrirLogin);
  
 
-document.getElementById("usarPrueba").addEventListener("click", function () {
-  correo.value = CORREO_OK;
-  clave.value = CLAVE_OK;
-  correo.classList.remove("is-invalid");
-  clave.classList.remove("is-invalid");
-  errorGeneral.classList.add("d-none");
-});
- 
 const botonVer = document.getElementById("verClave");
 botonVer.addEventListener("click", function () {
   const estaOculta = clave.type === "password";

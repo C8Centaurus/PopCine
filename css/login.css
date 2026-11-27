@@ -133,3 +133,18 @@ capa{
   font-size:.9rem;
   z-index:5;
 }
+.tarjeta .form-control.is-invalid{ background-image:none; }
+ 
+
+@media (max-width:420px){
+  .tarjeta-cuerpo{ padding:1.1rem; }
+  .logo-tarjeta{ width:150px; }
+}
+@media (max-height:520px){
+  .tarjeta-cab{ padding:8px; }
+  .logo-tarjeta{ width:110px; padding:4px 8px; }
+  .tarjeta-cuerpo{ padding:.9rem 1.1rem; }
+  .pista{ display:none; }
+}
+ 
+.d-none{ display:none !important; }

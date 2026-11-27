@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CINEX</title>
+    <title>POPCINE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./landing.css">
 </head>
@@ -32,156 +32,148 @@
                             <a class="nav-link" href="#">Confitería</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn_iniciar">Iniciar Sesión</a>
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="btn btn_iniciar">Iniciar Sesión</a>
+                        <a href="./admin.html" class="btn_admin" aria-label="Acceso administrador"
+                            title="Administrador">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <!-- HERO -->
-        <section class="hero">
-            <div class="container">
-                <span class="etiqueta">Proyectando ahora</span>
-                <h1>DUNE: PARTE DOS</h1>
-                <p>Paul Atreides se une a Chani y a los Fremen mientras busca venganza contra los conspiradores que
-                    destruyeron a su familia.</p>
-                <a href="#cartelera" class="btn btn_iniciar">Comprar Boletos</a>
-                <a href="#" class="btn btn_secundario">Ver Tráiler</a>
-            </div>
-        </section>
+    <section class="inicio" id="sala">
+        <div class="container">
 
-        <!-- CARTELERA -->
-        <section id="cartelera" class="seccion">
-            <div class="container">
-                <small class="sobretitulo">Cartelera y próximos estrenos</small>
-                <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
-                    <h2 class="titulo">Explora toda la programación de la sala</h2>
-                    <div class="pestanas">
-                        <button class="pestana activa">En Cartelera</button>
-                        <button class="pestana">Próximamente</button>
-                    </div>
-                </div>
-
-                <div class="buscador">
-                    <input type="text" class="form-control" placeholder="Buscar película, director, sala o actor...">
-                    <div class="chips">
-                        <button class="chip activo">Todos</button>
-                        <button class="chip">IMAX 3D</button>
-                        <button class="chip">Ciencia Ficción</button>
-                        <button class="chip">Drama / Suspenso</button>
-                        <button class="chip">Animación VIP</button>
-                    </div>
-                </div>
-
-                <div class="row g-3">
-                    <div class="col-6 col-lg-3">
-                        <article class="peli">
-                            <div class="poster">
-                                <span class="formato">IMAX Laser</span>
-                                <span class="nota">★ 8.9</span>
-                                <img src="./landing.img/dune.jpg" alt="Dune: Parte Dos">
-                                <button class="play">▶</button>
-                            </div>
-                            <h3>Dune: Parte Dos</h3>
-                            <p>La épica travesía de Paul Atreides en el inhóspito planeta Arrakis.</p>
-                            <div class="horas"><span>16:30</span><span>19:45</span><span>22:15 IMAX</span></div>
-                            <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
-                        </article>
-                    </div>
-
-                    <div class="col-6 col-lg-3">
-                        <article class="peli">
-                            <div class="poster">
-                                <span class="formato">Atmos 2D</span>
-                                <span class="nota">★ 7.8</span>
-                                <img src="./landing.img/alien.jpg" alt="Alien: Romulus">
-                                <button class="play">▶</button>
-                            </div>
-                            <h3>Alien: Romulus</h3>
-                            <p>Jóvenes colonos espaciales descubren la forma de vida más aterradora.</p>
-                            <div class="horas"><span>18:00</span><span>20:30</span><span>23:00 VIP</span></div>
-                            <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
-                        </article>
-                    </div>
-
-                    <div class="col-6 col-lg-3">
-                        <article class="peli">
-                            <div class="poster">
-                                <span class="formato">Digital 4K</span>
-                                <span class="nota">★ 8.1</span>
-                                <img src="./landing.img/joker.jpg" alt="Joker: Folie à Deux">
-                                <button class="play">▶</button>
-                            </div>
-                            <h3>Joker: Folie à Deux</h3>
-                            <p>Arthur Fleck internado en Arkham encuentra la música y a su inesperada compañera.</p>
-                            <div class="horas"><span>17:15</span><span>21:00</span></div>
-                            <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
-                        </article>
-                    </div>
-
-                    <div class="col-6 col-lg-3">
-                        <article class="peli">
-                            <div class="poster">
-                                <span class="formato">70mm IMAX</span>
-                                <span class="nota">★ 9.2</span>
-                                <img src="./landing.img/oppenheimer.jpg" alt="Oppenheimer">
-                                <button class="play">▶</button>
-                            </div>
-                            <h3>Oppenheimer</h3>
-                            <p>La historia del físico J. Robert Oppenheimer y el desarrollo de la bomba atómica.</p>
-                            <div class="horas"><span>15:00</span><span>19:30 70mm</span></div>
-                            <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
-                        </article>
-                    </div>
+            <!-- BARRA SUPERIOR -->
+            <div class="barra">
+                <div>
+                    <strong class="sala-nombre"><span class="punto"></span> Sala 01 VIP</strong>
                 </div>
             </div>
-        </section>
 
-        <!-- DULCERÍA -->
-        <section id="confiteria" class="dulceria">
-            <div class="container">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-5 text-center">
-                        <div class="balde">
-                            <span class="extra">Extra Mantequilla</span>
-                            <img src="./landing.img/palomitas.png" alt="Palomitas">
+            <!-- BANNER -->
+            <div class="banner" id="banner"></div>
+            <div class="banner-info">
+                <h1 id="bTitulo">Dune: Parte Dos</h1>
+                <p id="bTexto">Tras la caída de la Casa Atreides en el planeta desértico Arrakis, Paul Atreides y su
+                    madre, Lady Jessica, se unen a los Fremen. Paul inicia un camino de venganza y lucha junto a Chani y
+                    los Fremen mientras enfrenta el dilema moral de convertirse en una figura mesiánica (el Lisan al
+                    Gaib / Muad'Dib) y desencadenar una guerra santa por todo el universo conocido</p>
+                <a href="#cartelera" class="btn btn_iniciar">Comprar Boletos / Ver Horarios</a>
+            </div>
+            <!-- CARTELERA -->
+            <section id="cartelera" class="seccion m-4">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+                        <h2 class="titulo">Explora toda la programación de la sala</h2>
+                    </div>
+
+                    <div class="buscador">
+                        <input type="text" class="form-control" placeholder="Buscar película.">
+                        <div class="chips">
+                            <button class="chip activo">Todos</button>
+                            <button class="chip">IMAX 3D</button>
+                            <button class="chip">Ciencia Ficción</button>
+                            <button class="chip">Drama / Suspenso</button>
+                            <button class="chip">Animación</button>
                         </div>
                     </div>
 
-                    <div class="col-lg-7">
-                        <small class="etiqueta-dorada">Dulcería express a la butaca</small>
-                        <h2 class="titulo">Pide tus palomitas sin levantarte de la sala</h2>
-                        <p class="texto">Selecciona tu balde jumbo con maíz recién reventado, bañado en mantequilla
-                            caliente artesanal o caramelo crujiente. Nuestro personal te lo entregará directo en tu
-                            asiento durante los tráilers.</p>
+                    <div class="row g-3 m-3">
+                        <div class="col-6 col-lg-3">
+                            <article class="peli">
+                                <div class="poster">
+                                    <img src="./landing.img/duna-poster.jpg" alt="Dune: Parte Dos">
+                                </div>
+                                <h3>Dune: Parte Dos</h3>
+                                <p>La épica travesía de Paul Atreides en el inhóspito planeta Arrakis.</p>
+                                <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
+                            </article>
+                        </div>
 
-                        <div class="row g-2 mb-4">
-                            <div class="col-sm-6">
-                                <div class="combo">
-                                    <div>
-                                        <strong>Combo Pareja VIP</strong>
-                                        <small>1 Balde Jumbo + 2 Refrescos 32oz</small>
-                                    </div>
-                                    <span class="precio">$14.50</span>
+                        <div class="col-6 col-lg-3">
+                            <article class="peli">
+                                <div class="poster">
+                                    <img src="./landing.img/alien.jpg" alt="Alien: Romulus">
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="combo">
-                                    <div>
-                                        <strong>Balde Coleccionable</strong>
-                                        <small>Edición metálica Dune 2 + Refill</small>
-                                    </div>
-                                    <span class="precio">$18.00</span>
+                                <h3>Alien: Romulus</h3>
+                                <p>Jóvenes colonos espaciales descubren la forma de vida más aterradora.</p>
+                                <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <article class="peli">
+                                <div class="poster">
+                                    <img src="./landing.img/joker.jpg" alt="Joker">
                                 </div>
+                                <h3>Joker</h3>
+                                <p>Arthur Fleck internado en Arkham encuentra la música y a su inesperada compañera.</p>
+                                <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <article class="peli">
+                                <div class="poster">
+                                    <img src="./landing.img/oppenheimer.jpg" alt="Oppenheimer">
+                                </div>
+                                <h3>Oppenheimer</h3>
+                                <p>La historia del físico J. Robert Oppenheimer y el desarrollo de la bomba atómica.</p>
+                                <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DULCERÍA -->
+            <section id="confiteria" class="dulceria">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-5 text-center">
+                            <div class="balde">
+                                <img src="./landing.img/Cubeta de palomitas POPCINE deliciosa (1).png" alt="Palomitas">
                             </div>
                         </div>
 
-                        <a href="#" class="btn btn_dorado">Agregar Palomitas a mi Reserva</a>
+                        <div class="col-lg-7">
+                            <h2 class="titulo">Pide tus palomitas sin levantarte de la sala</h2>
+                            <p class="texto">Selecciona tu balde jumbo, bañado en mantequilla caliente artesanal o
+                                caramelo
+                                crujiente.</p>
+
+                            <div class="row g-2 mb-4">
+                                <div class="col-sm-6">
+                                    <div class="combo">
+                                        <div>
+                                            <strong>Combo Pareja VIP</strong>
+                                            <small>1 Balde Jumbo + 2 Refrescos 32oz</small>
+                                        </div>
+                                        <span class="precio">$14.50</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="combo">
+                                        <div>
+                                            <strong>Balde Coleccionable</strong>
+                                            <small>Edición metálica Dune 2 + Refill</small>
+                                        </div>
+                                        <span class="precio">$18.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn_dorado">Agregar Palomitas a mi Reserva</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
 
@@ -203,7 +195,7 @@
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

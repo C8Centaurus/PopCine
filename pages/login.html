@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
+
 <body class="min-vh-100 d-flex align-items-center justify-content-center overflow-hidden position-relative">
 
-<a href="index.html" class="volver position-absolute top-0 start-0 m-3 fw-bold link-warning text-decoration-none">Volver a la sala</a>
+    <a href="index.html"
+        class="volver position-absolute top-0 start-0 m-3 fw-bold link-warning text-decoration-none">Volver a la
+        sala</a>
 
-<button id="cubeta" type="button" class="cubeta" aria-label="Abrir la cubeta de PopCine para iniciar sesión">
-    <div class="palomitas" id="palomitas" aria-hidden="true"></div>
-    <div class="balde">
-      <img src="logo.png" alt="PopCine" class="logo-cubeta">
+    <button id="cubeta" type="button" class="cubeta" aria-label="Abrir la cubeta de PopCine para iniciar sesión">
+        <div class="palomitas" id="palomitas" aria-hidden="true"></div>
+        <div class="balde">
+            <img src="logo.png" alt="PopCine" class="logo-cubeta">
+        </div>
+    </button>
+
+    <p id="pista" class="pista badge rounded-pill text-bg-warning fs-6 position-fixed bottom-0 mb-4">Toca la cubeta para
+        entrar</p>
+
+
+    <!-- FORMULARIO DE LOGIN -->
+
+    <div id="capaTarjeta" class="capa d-none">
+    <div id="tarjeta" class="card tarjeta border-0 shadow-lg rounded-4">
+
+        <div class="tarjeta-cab reveal">
+            <img src="logo.png" alt="PopCine" class="logo-tarjeta">
+        </div>
+
+        <div class="card-body tarjeta-cuerpo">
+            <h1 class="h4 fw-bold text-danger mb-1 reveal">¡Bienvenido a la taquilla!</h1>
+            <p class="text-muted mb-3 reveal">Inicia sesión para administrar la cartelera.</p>
+
+            <div
+                class="alert alert-warning py-2 small mb-3 reveal d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                <span>Cuenta de prueba:<br><strong>admin@cinecatalogo.com</strong><br>Clave:
+                    <strong>palomitas123</strong></span>
+                <button type="button" id="usarPrueba" class="btn btn-sm btn-dark rounded-pill">Usar cuenta</button>
+            </div>
+
+            <form id="formulario" novalidate>
+                <div class="form-floating mb-3 reveal">
+                    <input type="email" class="form-control" id="correo" placeholder="Correo" autocomplete="username">
+                    <label for="correo">Correo</label>
+                    <div class="invalid-feedback">Escribe tu correo.</div>
+                </div>
+
+                <div class="form-floating mb-3 campo-clave reveal">
+                    <input type="password" class="form-control" id="clave" placeholder="Contraseña"
+                        autocomplete="current-password">
+                    <label for="clave">Contraseña</label>
+                    <button type="button" id="verClave" class="ver-clave" aria-label="Mostrar contraseña"
+                        aria-pressed="false">Ver</button>
+                    <div class="invalid-feedback">Escribe tu contraseña.</div>
+                </div>
+
+                <div id="errorGeneral" class="alert alert-danger py-2 d-none" role="alert"></div>
+
+                <button type="submit"
+                    class="btn btn-danger btn-lg w-100 rounded-pill shadow-sm reveal">Ingresar</button>
+            </form>
+
+            <a href="index.html" class="d-block text-center mt-3 small text-muted reveal">Volver a la sala</a>
+        </div>
     </div>
-  </button>
+    </div>
 
-  <p id="pista" class="pista badge rounded-pill text-bg-warning fs-6 position-fixed bottom-0 mb-4">Toca la cubeta para entrar</p>
- 
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+<script src="../js/login.js"></script>
 </body>
+
 </html>

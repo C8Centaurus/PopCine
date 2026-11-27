@@ -52,8 +52,10 @@
         <!-- Encabezado y botones de acción -->
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
             <h1 class="text-cine-red fw-bold fs-2 m-0">🍿 Mis películas</h1>
-            <div class="d-flex gap-2">
-                <button class="btn btn-cine rounded-pill px-4 fw-semibold">+ Agregar película</button>
+            <div class="d-flex gap-2">                
+                <button type="button" class="btn btn-cine rounded-pill px-4 fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    + Agregar película
+                </button>
             </div>
         </div>
 
@@ -93,7 +95,7 @@
                                 <img src="" alt="">
                             </div>
                         </td>
-                        <td class="fw-bold titulo_peli">El Rey León</td>
+                        <td class="fw-bold titulo_peli text-warning">El Rey León</td>
                         <td class="text-white">Animación</td>
                         <td class="text-white">88 min</td>
                         <td class="text-white">Todo público</td>
@@ -116,8 +118,103 @@
         </div>
 
     </main>
+<!---------------------------------------------- footer ------------------------>
+    <footer>
+
+    </footer>
+
+<!--------------------------------------- modal ---------------------------------------->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog bg-black rounded-3">
+    <div class="modal-content">
+      <div class="modal-header bg-black">
+        <h1 class="modal-title fs-5  text-rosa fw-bold" id="exampleModalLabel">🍿 Agregar nueva pelicula</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--------------------------------  formulario    -->
+        <form >
+        <div class="modal-body">
+          <!-- Campo oculto para guardar el ID al editar (útil para JSON-Server) -->
+          <input type="hidden" id="peliculaId">
+
+          <!-- Título -->
+          <div class="mb-3">
+            <label for="titulo" class="form-label text-warning fw-semibold">Título</label>
+            <input type="text" class="form-control  border-secondary" id="titulo" placeholder="Ej: El Rey León" required>
+          </div>
+
+          <!-- Póster (URL de la imagen) -->
+          <div class="mb-3">
+            <label for="poster" class="form-label text-warning fw-semibold">URL del Póster</label>
+            <input type="url" class="form-control  border-secondary" id="poster" placeholder="https://ejemplo.com/poster.jpg" required>
+          </div>
+
+          <!-- Fila para Género y Duración -->
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="genero" class="form-label text-warning fw-semibold">Género</label>
+              <select class="form-select border-secondary" id="genero" required>
+                <option value="" selected disabled>Selecciona...</option>
+                <option value="Animación">Animación</option>
+                <option value="Acción">Acción</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Drama">Drama</option>
+                <option value="Terror">Terror</option>
+                <option value="Ciencia Ficción">Ciencia Ficción</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="duracion" class="form-label text-warning fw-semibold">Duración</label>
+              <input type="text" class="form-control  border-secondary" id="duracion" placeholder="Ej: 88 min" required>
+            </div>
+          </div>
+
+          <!-- Fila para Edad y Estado -->
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="edad" class="form-label text-warning fw-semibold">Clasificación (Edad)</label>
+              <select class="form-select  border-secondary" id="edad" required>
+                <option value="Todo público">Todo público</option>
+                <option value="+7">+7 años</option>
+                <option value="+12">+12 años</option>
+                <option value="+15">+15 años</option>
+                <option value="+18">+18 años</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="estado" class="form-label text-warning fw-semibold">Estado</label>
+              <select class="form-select  border-secondary" id="estado" required>
+                <option value="En cartelera">En cartelera</option>
+                <option value="Próximamente">Próximamente</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="modal-footer border-secondary bg-black">          
+            <button type="button" class="btn btn-secondary mx-2" data-bs-dismiss="modal">Cerrar</button>    
+            <button type="submit" class="btn btn-iniciar fw-bold px-4" id="btnGuardar">Guardar 🍿</button>
+
+        </div>
+      </form>
+<!----------------------------------------------------------------  fin formulario  ------------------->
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/Api.js"></script>
+    <script src="../js/admin.js"></script>
 </body>
 </html>

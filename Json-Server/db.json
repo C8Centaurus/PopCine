@@ -8,7 +8,7 @@
       "horario": "19:30",
       "sala": "Sala 1",
       "precio": 18000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "2",
@@ -18,7 +18,7 @@
       "horario": "20:15",
       "sala": "Sala 1",
       "precio": 20000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "3",
@@ -28,7 +28,7 @@
       "horario": "16:00",
       "sala": "Sala 2",
       "precio": 17000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "4",
@@ -38,7 +38,7 @@
       "horario": "21:00",
       "sala": "Sala 1",
       "precio": 18000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "5",
@@ -48,7 +48,7 @@
       "horario": "14:30",
       "sala": "Sala 3",
       "precio": 16000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "6",
@@ -58,7 +58,7 @@
       "horario": "18:00",
       "sala": "Sala 4",
       "precio": 19000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "7",
@@ -68,7 +68,7 @@
       "horario": "21:30",
       "sala": "Sala 2",
       "precio": 18500,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "8",
@@ -78,7 +78,7 @@
       "horario": "17:45",
       "sala": "Sala 4",
       "precio": 17000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "9",
@@ -88,7 +88,7 @@
       "horario": "13:30",
       "sala": "Sala 3",
       "precio": 15000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "10",
@@ -98,7 +98,7 @@
       "horario": "19:00",
       "sala": "Sala 2",
       "precio": 18000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "11",
@@ -108,7 +108,7 @@
       "horario": "20:00",
       "sala": "Sala 4",
       "precio": 18000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "12",
@@ -118,7 +118,7 @@
       "horario": "15:00",
       "sala": "Sala 3",
       "precio": 16000,
-      "disponible": false
+      "estado": false
     },
     {
       "id": "13",
@@ -128,7 +128,7 @@
       "horario": "18:30",
       "sala": "Sala 5",
       "precio": 18500,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "14",
@@ -138,7 +138,7 @@
       "horario": "22:00",
       "sala": "Sala 1",
       "precio": 19000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "15",
@@ -148,7 +148,7 @@
       "horario": "17:00",
       "sala": "Sala 5",
       "precio": 17000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "16",
@@ -158,7 +158,7 @@
       "horario": "16:15",
       "sala": "Sala 3",
       "precio": 17500,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "17",
@@ -168,7 +168,7 @@
       "horario": "21:45",
       "sala": "Sala 5",
       "precio": 17500,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "18",
@@ -178,7 +178,7 @@
       "horario": "19:15",
       "sala": "Sala 4",
       "precio": 17000,
-      "disponible": true
+      "estado": "En cartelera"
     },
     {
       "id": "19",
@@ -188,7 +188,7 @@
       "horario": "15:30",
       "sala": "Sala 2",
       "precio": 17500,
-      "disponible": false
+      "estado": "En cartelera"
     },
     {
       "id": "20",
@@ -198,7 +198,7 @@
       "horario": "20:45",
       "sala": "Sala 5",
       "precio": 19000,
-      "disponible": true
+      "estado": "En cartelera"
     }
   ]
 }

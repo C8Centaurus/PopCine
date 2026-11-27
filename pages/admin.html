@@ -36,7 +36,7 @@
 
                     </ul>
                     <form class="d-flex" role="search">
-                        <a href="#" class="btn btn-iniciar" type="submit">Cerrar Sección</a>
+                        <a href="../index.html" class="btn btn-iniciar" type="submit">Cerrar Sección</a>
                     </form>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                         <th class="py-3">Título</th>
                         <th class="py-3">Género</th>
                         <th class="py-3">Duración</th>
-                        <th class="py-3">Edad</th>
+                        <th class="py-3">Horario</th>
                         <th class="py-3">Estado</th>
                         <th class="py-3 pe-4">Acciones</th>
                     </tr>
@@ -91,14 +91,14 @@
                     <!---------------------------------------------------------- pelicula 1 -->
                     <tr class="border-bottom border-dark-subtle">
                         <td class="ps-4 py-3">
-                            <div class="poster-placeholder bg-warning text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
-                                <img src="" alt="">
+                            <div class="poster-placeholder  text-white d-flex align-items-center justify-content-center rounded-3 shadow-sm">
+                                <img src="https://i.pinimg.com/564x/26/73/0e/26730e9a4cda68acad7f0b03258ce0fc.jpg" alt="" class="poster_admin">
                             </div>
                         </td>
-                        <td class="fw-bold titulo_peli text-warning">El Rey León</td>
+                        <td class="fw-bold titulo_peli text-danger">El Rey León</td>
                         <td class="text-white">Animación</td>
                         <td class="text-white">88 min</td>
-                        <td class="text-white">Todo público</td>
+                        <td class="text-white">18:00</td>
                         <td>
                             <span class="badge rounded-pill badge-cartelera px-3 py-2">En cartelera</span>
                         </td>
@@ -175,14 +175,8 @@
           <!-- Fila para Edad y Estado -->
           <div class="row">
             <div class="col-md-6 mb-3">
-              <label for="edad" class="form-label text-warning fw-semibold">Clasificación (Edad)</label>
-              <select class="form-select  border-secondary" id="edad" required>
-                <option value="Todo público">Todo público</option>
-                <option value="+7">+7 años</option>
-                <option value="+12">+12 años</option>
-                <option value="+15">+15 años</option>
-                <option value="+18">+18 años</option>
-              </select>
+              <label for="Horario" class="form-label text-warning fw-semibold">Horario</label>
+              <input type="text" class="form-control  border-secondary" id="Horario" placeholder="Ej: 20:00" required>
             </div>
 
             <div class="col-md-6 mb-3">

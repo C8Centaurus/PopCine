@@ -1,0 +1,539 @@
+/* ===== NABVAR ===== */
+.nav-negro {
+    background-color: #000;
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+}
+
+.nav-negro .container-fluid {
+    padding: 0 5rem;
+}
+
+.nav-negro .nav-link {
+    color: #fff;
+}
+
+.nav-negro .nav-link:hover {
+    color: #e50914;
+}
+
+@media (min-width: 992px) {
+    .nav-negro .navbar-collapse { justify-content: center; }
+    .nav-negro .navbar-nav { gap: 2.5rem; }
+}
+
+@media (max-width: 991.98px) {
+    .nav-negro .container-fluid { padding: 0 1rem; }
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.btn_iniciar {
+    --bs-btn-bg: #e50914;
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-bg: #ff1f2d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-bg: #c4070f;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-border-color: transparent;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 6px;
+    outline: 1px dashed #ff4d55;
+    outline-offset: 3px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn_iniciar:hover { transform: scale(1.05); }
+
+/* ===== TÍTULOS ===== */
+.sobretitulo,
+.etiqueta-dorada {
+    display: block;
+    color: var(--dorado);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.etiqueta-dorada {
+    display: inline-block;
+    background: #3a2a10;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.titulo {
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+}
+
+/* ===== PESTAÑAS ===== */
+.pestanas {
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.pestana {
+    background: none;
+    border: 0;
+    color: #999;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+.pestana.activa {
+    background: #b00610;
+    color: #fff;
+}
+
+/* ===== BUSCADOR ===== */
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background: #141414;
+    border-radius: 12px;
+    padding: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.buscador input {
+    flex: 1;
+    min-width: 200px;
+    background: #0a0a0a;
+    color: #fff;
+    border: 0;
+    font-size: 0.85rem;
+}
+
+.buscador input:focus {
+    background: #0a0a0a;
+    color: #fff;
+    box-shadow: 0 0 0 1px var(--rojo);
+}
+
+.chips {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background: #1d1d1d;
+    color: #ccc;
+    border: 1px solid #2c2c2c;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 12px;
+}
+
+.chip.activo,
+.chip:hover {
+    background: var(--dorado);
+    color: #000;
+    border-color: var(--dorado);
+}
+
+/* ===== TARJETAS DE PELÍCULA ===== */
+.peli {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 0.6rem;
+    height: 100%;
+}
+
+.poster {
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+.poster img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.formato,
+.nota {
+    position: absolute;
+    top: 6px;
+    z-index: 1;
+    font-size: 0.65rem;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 1px 6px;
+}
+
+.formato {
+    left: 6px;
+    background: var(--dorado);
+    color: #000;
+    text-transform: uppercase;
+}
+
+.nota {
+    right: 6px;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--dorado);
+}
+
+.play {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--rojo);
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.peli h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.peli p {
+    color: #e8a85a;
+    font-size: 0.75rem;
+    min-height: 3.2em;
+}
+
+.horas {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.7rem;
+}
+
+.horas span {
+    background: #2a1d0f;
+    color: var(--dorado);
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.btn_asientos {
+    display: block;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.btn_asientos:hover {
+    background: var(--rojo);
+    color: #fff;
+}
+
+/* ===== DULCERÍA ===== */
+.dulceria {
+    padding: 4rem 0;
+    background: radial-gradient(ellipse at 25% 50%, #3a2610 0%, #0a0a0a 60%);
+}
+
+.balde {
+    position: relative;
+    display: inline-block;
+    transform: rotate(-4deg);
+}
+
+.balde img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 20px;
+}
+
+.extra {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    z-index: 1;
+    background: var(--dorado);
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 20px;
+}
+
+.texto {
+    color: #e8a85a;
+    margin: 1rem 0 1.5rem;
+}
+
+.combo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    background: #151515;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 0.7rem;
+    height: 100%;
+}
+
+.combo strong {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.combo small {
+    color: var(--dorado);
+    font-size: 0.65rem;
+}
+
+.combo .precio {
+    color: var(--dorado);
+    font-size: 0.95rem;
+}
+
+.btn_dorado {
+    --bs-btn-bg: #e8b563;
+    --bs-btn-color: #000;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-bg: #ffd08a;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-bg: #d9a24a;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-border-color: transparent;
+
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    padding: 8px 24px;
+    box-shadow: 0 0 20px rgba(232, 181, 99, 0.4);
+}
+/* ===== INICIO ===== */
+.inicio {
+    padding: 1rem 0 3rem;
+    background: radial-gradient(ellipse at top, #1c1410 0%, #0a0a0a 60%);
+}
+
+/* Barra superior */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.sala-nombre {
+    color: var(--dorado);
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 0.6rem;
+}
+
+.punto {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--rojo);
+}
+/* Banner */
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    min-height: 650px;
+    padding: 2rem;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    background:
+        linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        var(--fondo-banner, url("./landing.img/DUNETWO.jpg")) center / cover;
+}
+
+.tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+}
+
+.tag-rojo,
+.tag-oscuro {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.tag-rojo { background: var(--rojo); }
+.tag-oscuro { background: #2a2113; color: var(--dorado); }
+
+.banner h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.banner p {
+    max-width: 480px;
+    color: #e8a85a;
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Selector de proyección */
+.selector {
+    display: flex;
+    flex-direction: column;
+    min-width: 170px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 0.6rem;
+}
+
+.selector small {
+    color: #aaa;
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+}
+
+.opcion {
+    background: none;
+    border: 0;
+    color: #ccc;
+    font-size: 0.7rem;
+    text-align: left;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.opcion.activa,
+.opcion:hover {
+    background: #2a2a2a;
+    color: var(--dorado);
+}
+@media (max-width: 768px) {
+    .banner { flex-direction: column; align-items: stretch; padding: 1.2rem; }
+    .letra { display: none; }
+}
+/* Textos en blanco dentro de la sala */
+.inicio,
+.inicio h1,
+.inicio h2,
+.inicio h3,
+.inicio strong,
+.banner h1,
+.selector .opcion,
+.selector small {
+    color: #fff;
+}
+
+.tag-oscuro { color: var(--dorado); }
+.banner p { color: #e8a85a; }
+.sala-nombre { color: var(--dorado); }
+.opcion.activa,
+.opcion:hover { color: var(--dorado); }
+
+.btn_admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #b00610;
+    border: 1px solid #333;
+    color: var(--dorado);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.btn_admin:hover {
+    background: var(--dorado);
+    color: #b00610;
+    transform: scale(1.08);
+}
+.footer {
+    background: #0a0a0a;
+    border-top: 1px solid #1f1f1f;
+    padding: 1rem 0;
+}
+
+.footer-linea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.footer-izq {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #b00610;
+}
+
+.footer-logo span {
+    color: #b00610;
+}
+
+.footer small {
+    color: #e8a85a;
+    font-size: 0.75rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.footer-links a {
+    color: #ccc;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--dorado);
+}

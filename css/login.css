@@ -1,0 +1,21 @@
+:root{
+  --rojo:#D8232A;
+  --rojo-oscuro:#A5151B;
+}
+ 
+/* ====== Fondo: sala oscura con el haz de luz del proyector ====== */
+body{
+  min-height:100vh;
+  min-height:100dvh;               /* en el celular cuenta bien la barra del navegador */
+  background:radial-gradient(ellipse at 50% 35%, #4a0d10, #120505 70%);
+  font-family:system-ui, sans-serif;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:linear-gradient(180deg, rgba(255,236,190,.16), rgba(255,236,190,0) 65%);
+  clip-path:polygon(44% 0, 56% 0, 100% 100%, 0 100%);
+}

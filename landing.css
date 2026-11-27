@@ -317,18 +317,21 @@
 }
 
 .btn_dorado {
-    background: var(--dorado);
-    color: #000;
+    --bs-btn-bg: #e8b563;
+    --bs-btn-color: #000;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-bg: #ffd08a;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-bg: #d9a24a;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-border-color: transparent;
+
     font-weight: 700;
     font-size: 0.85rem;
     border-radius: 20px;
     padding: 8px 24px;
     box-shadow: 0 0 20px rgba(232, 181, 99, 0.4);
-}
-
-.btn_dorado:hover {
-    background: #ffd08a;
-    color: #000;
 }
 /* ===== INICIO ===== */
 .inicio {
@@ -481,4 +484,56 @@
     background: var(--dorado);
     color: #b00610;
     transform: scale(1.08);
+}
+.footer {
+    background: #0a0a0a;
+    border-top: 1px solid #1f1f1f;
+    padding: 1rem 0;
+}
+
+.footer-linea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.footer-izq {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #b00610;
+}
+
+.footer-logo span {
+    color: #b00610;
+}
+
+.footer small {
+    color: #e8a85a;
+    font-size: 0.75rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.footer-links a {
+    color: #ccc;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--dorado);
 }

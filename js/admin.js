@@ -1,3 +1,14 @@
+/*----------------------------------   guardian de administrador  ----*/
+function revisarSesion() {
+  if (!sessionStorage.getItem("cine_sesion")) {
+    document.documentElement.classList.add("sin-sesion");
+    window.location.replace("login.html");
+  }
+}
+/*---------------------------------- fin  guardian de administrador  ----*/
+revisarSesion();
+window.addEventListener("pageshow", revisarSesion);
+
 
 const tablaPeliculas = document.querySelector('tbody');
 

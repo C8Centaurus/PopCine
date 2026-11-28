@@ -75,63 +75,20 @@
                     </div>
 
                     <div class="buscador">
-                        <input type="text" class="form-control" placeholder="Buscar película.">
+                        <input type="text" id="input-buscador" class="form-control" placeholder="Buscar película.">
                         <div class="chips">
                             <button class="chip activo">Todos</button>
-                            <button class="chip">IMAX 3D</button>
                             <button class="chip">Ciencia Ficción</button>
-                            <button class="chip">Drama / Suspenso</button>
                             <button class="chip">Animación</button>
                         </div>
                     </div>
-
-                    <div class="row g-3 m-3">
-                        <div class="col-6 col-lg-3">
-                            <article class="peli">
-                                <div class="poster">
-                                    <img src="./landing.img/duna-poster.jpg" alt="Dune: Parte Dos">
-                                </div>
-                                <h3>Dune: Parte Dos</h3>
-                                <p>La épica travesía de Paul Atreides en el inhóspito planeta Arrakis.</p>
-                                <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
-                            </article>
-                        </div>
-
-                        <div class="col-6 col-lg-3">
-                            <article class="peli">
-                                <div class="poster">
-                                    <img src="./landing.img/alien.jpg" alt="Alien: Romulus">
-                                </div>
-                                <h3>Alien: Romulus</h3>
-                                <p>Jóvenes colonos espaciales descubren la forma de vida más aterradora.</p>
-                                <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
-                            </article>
-                        </div>
-
-                        <div class="col-6 col-lg-3">
-                            <article class="peli">
-                                <div class="poster">
-                                    <img src="./landing.img/joker.jpg" alt="Joker">
-                                </div>
-                                <h3>Joker</h3>
-                                <p>Arthur Fleck internado en Arkham encuentra la música y a su inesperada compañera.</p>
-                                <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
-                            </article>
-                        </div>
-
-                        <div class="col-6 col-lg-3">
-                            <article class="peli">
-                                <div class="poster">
-                                    <img src="./landing.img/oppenheimer.jpg" alt="Oppenheimer">
-                                </div>
-                                <h3>Oppenheimer</h3>
-                                <p>La historia del físico J. Robert Oppenheimer y el desarrollo de la bomba atómica.</p>
-                                <a href="#sala" class="btn btn_asientos">Seleccionar Asientos</a>
-                            </article>
-                        </div>
+                    <div class="row g-3 m-3" id="contenedor-peliculas">
+                        
                     </div>
-                </div>
-            </section>
+                           
+                              
+
+                        
 
             <!-- DULCERÍA -->
             <section id="confiteria" class="dulceria">
@@ -190,23 +147,8 @@
                 </div>
             </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="./js/Api.js"></script> 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

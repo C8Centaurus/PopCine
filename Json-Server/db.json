@@ -2,7 +2,7 @@
   "peliculas": [
     {
       "id": "1",
-      "url" : "https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/8d8f28105415493.619ded067937d.jpg",
+      "url": "https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/8d8f28105415493.619ded067937d.jpg",
       "titulo": "Interestelar",
       "genero": "Ciencia ficción",
       "duracion": "169 min",
@@ -13,7 +13,7 @@
     },
     {
       "id": "2",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhGSKqSH3PahgvMVATHhLbqjZQ-QmYQHz9PpuKYALuw72jfewgJxyhjPah&s=10",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhGSKqSH3PahgvMVATHhLbqjZQ-QmYQHz9PpuKYALuw72jfewgJxyhjPah&s=10",
       "titulo": "Duna: Parte Dos",
       "genero": "Ciencia ficción",
       "duracion": "166 min",
@@ -24,7 +24,7 @@
     },
     {
       "id": "3",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGtMW3OqzDZcLFDg6r4tRneunt_SABT0uixO5HD-rb_w&s=10",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGtMW3OqzDZcLFDg6r4tRneunt_SABT0uixO5HD-rb_w&s=10",
       "titulo": "Spider-Man: A través del Spider-Verso",
       "genero": "Animación",
       "duracion": "140 min",
@@ -35,7 +35,7 @@
     },
     {
       "id": "4",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlyxWPFbBeKU-CnP57S6Kt8ACMxoqVzBVr3RTOWIy4Kw&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlyxWPFbBeKU-CnP57S6Kt8ACMxoqVzBVr3RTOWIy4Kw&s=10",
       "titulo": "El Caballero de la Noche",
       "genero": "Acción",
       "duracion": "152 min",
@@ -46,7 +46,7 @@
     },
     {
       "id": "5",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAbrcEJesrak0SJ8dgxxhK3QIA1ydfPzEWejn4cm3iD5Vl7uTiFdasMoIv&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAbrcEJesrak0SJ8dgxxhK3QIA1ydfPzEWejn4cm3iD5Vl7uTiFdasMoIv&s=10",
       "titulo": "Intensamente 2",
       "genero": "Animación",
       "duracion": "96 min",
@@ -57,7 +57,7 @@
     },
     {
       "id": "6",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxz1Ji9g13_dNckIVXGOZ2wICmhBDuLtJAA1XlkqW69nVIrK4XBysKOqk&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxz1Ji9g13_dNckIVXGOZ2wICmhBDuLtJAA1XlkqW69nVIrK4XBysKOqk&s=10",
       "titulo": "Oppenheimer",
       "genero": "Drama",
       "duracion": "180 min",
@@ -68,7 +68,7 @@
     },
     {
       "id": "7",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnmGjn9NfyyFwBCldwI0c_C0fULzyrAulICLPjjtHTg&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnmGjn9NfyyFwBCldwI0c_C0fULzyrAulICLPjjtHTg&s=10",
       "titulo": "John Wick 4",
       "genero": "Acción",
       "duracion": "169 min",
@@ -79,7 +79,7 @@
     },
     {
       "id": "8",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Dk3cVU7gEFjog8hiF5qsPmdKzbya_TpV3plNlK_0cw&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Dk3cVU7gEFjog8hiF5qsPmdKzbya_TpV3plNlK_0cw&s=10",
       "titulo": "Parásitos",
       "genero": "Suspenso",
       "duracion": "132 min",
@@ -90,7 +90,7 @@
     },
     {
       "id": "9",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXi0cbpQnqJsJlwMpnqOcu_XKlk2_omQPSVdT4C1ucQidoUQXwRKWTVAgJ&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXi0cbpQnqJsJlwMpnqOcu_XKlk2_omQPSVdT4C1ucQidoUQXwRKWTVAgJ&s=10",
       "titulo": "Toy Story",
       "genero": "Animación",
       "duracion": "81 min",
@@ -101,7 +101,7 @@
     },
     {
       "id": "10",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ahk9XCa89MS6hQk_Dz17WSk9NezIm0d7aFfhP51Zum-PSaX4LNCcUnY&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ahk9XCa89MS6hQk_Dz17WSk9NezIm0d7aFfhP51Zum-PSaX4LNCcUnY&s=10",
       "titulo": "Inception",
       "genero": "Ciencia ficción",
       "duracion": "148 min",
@@ -112,7 +112,7 @@
     },
     {
       "id": "11",
-      "url" : "https://i.pinimg.com/564x/26/73/0e/26730e9a4cda68acad7f0b03258ce0fc.jpg",      
+      "url": "https://i.pinimg.com/564x/26/73/0e/26730e9a4cda68acad7f0b03258ce0fc.jpg",
       "titulo": "Gladiador",
       "genero": "Aventura",
       "duracion": "155 min",
@@ -123,7 +123,7 @@
     },
     {
       "id": "12",
-      "url" : "https://i.pinimg.com/originals/52/40/93/52409341203bb9276ec911ebbda4f91d.jpg",      
+      "url": "https://i.pinimg.com/originals/52/40/93/52409341203bb9276ec911ebbda4f91d.jpg",
       "titulo": "Coco",
       "genero": "Animación",
       "duracion": "105 min",
@@ -134,7 +134,7 @@
     },
     {
       "id": "13",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTDnE_0dvqI0-U9r15fWrwAdFpRBPAwCBnPKvy93oRKw&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTDnE_0dvqI0-U9r15fWrwAdFpRBPAwCBnPKvy93oRKw&s=10",
       "titulo": "El Padrino",
       "genero": "Crimen",
       "duracion": "175 min",
@@ -145,7 +145,7 @@
     },
     {
       "id": "14",
-      "url" : "https://m.media-amazon.com/images/M/MV5BODE2NWUwYmYtYmNmZi00OTVjLTgxMzEtZWYyMWVmODg5MmM2XkEyXkFqcGc@._V1_.jpg",      
+      "url": "https://m.media-amazon.com/images/M/MV5BODE2NWUwYmYtYmNmZi00OTVjLTgxMzEtZWYyMWVmODg5MmM2XkEyXkFqcGc@._V1_.jpg",
       "titulo": "Mad Max: Furia en el camino",
       "genero": "Acción",
       "duracion": "120 min",
@@ -156,7 +156,7 @@
     },
     {
       "id": "15",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYpc4mwJLWyuentijFcVqPGCOFm4jpK3asBPdQub7BxA&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYpc4mwJLWyuentijFcVqPGCOFm4jpK3asBPdQub7BxA&s=10",
       "titulo": "La La Land",
       "genero": "Romance",
       "duracion": "128 min",
@@ -167,7 +167,7 @@
     },
     {
       "id": "16",
-      "url" : "https://i.pinimg.com/736x/dc/aa/c2/dcaac297738ef4316fd3bae66563f315.jpg",      
+      "url": "https://i.pinimg.com/736x/dc/aa/c2/dcaac297738ef4316fd3bae66563f315.jpg",
       "titulo": "El viaje de Chihiro",
       "genero": "Fantasía",
       "duracion": "125 min",
@@ -178,7 +178,7 @@
     },
     {
       "id": "17",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCG2e7cyNFsZ21aq-KDFRwjhnKWFcfXx1WO6KcZEyOWQ&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCG2e7cyNFsZ21aq-KDFRwjhnKWFcfXx1WO6KcZEyOWQ&s=10",
       "titulo": "Alien: El octavo pasajero",
       "genero": "Terror",
       "duracion": "117 min",
@@ -189,7 +189,7 @@
     },
     {
       "id": "18",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB8GLUsH7skvy5XUwfZiHineV63HyHxCyCDUtPqC7ZzA&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB8GLUsH7skvy5XUwfZiHineV63HyHxCyCDUtPqC7ZzA&s=10",
       "titulo": "Whiplash",
       "genero": "Drama",
       "duracion": "107 min",
@@ -200,7 +200,7 @@
     },
     {
       "id": "19",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Xr3anrWiN822wi6buozSC6h8ESM0bS5jMen20jhdig&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Xr3anrWiN822wi6buozSC6h8ESM0bS5jMen20jhdig&s=10",
       "titulo": "Jurassic Park",
       "genero": "Aventura",
       "duracion": "127 min",
@@ -211,7 +211,7 @@
     },
     {
       "id": "20",
-      "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx5EBI2BJk2LAPJ3jvEwl9xZZ9fdfxi7DPI_U9qSa-Rw&s=10",      
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx5EBI2BJk2LAPJ3jvEwl9xZZ9fdfxi7DPI_U9qSa-Rw&s=10",
       "titulo": "Blade Runner 2049",
       "genero": "Ciencia ficción",
       "duracion": "164 min",
@@ -220,5 +220,6 @@
       "precio": 19000,
       "estado": "En cartelera"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

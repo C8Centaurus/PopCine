@@ -11,6 +11,7 @@ window.addEventListener("pageshow", revisarSesion);
 
 
 const tablaPeliculas = document.querySelector('tbody');
+let peliculasGuardadas = [];
 
 function pintarPeliculas(peliculas){
     tablaPeliculas.innerHTML = ``;
@@ -53,8 +54,8 @@ function pintarPeliculas(peliculas){
     });
 }
     async function cargarPeliculas() {
-    const peliculas = await index();
-    pintarPeliculas(peliculas);
+    peliculasGuardadas = await index();
+    pintarPeliculas(peliculasGuardadas);
 
     }
 
@@ -79,21 +80,57 @@ const campoPrecio = document.getElementById('precio');
 
 let idEditando = null;
 
-modalform.addEventListener('show.bs.modal', (event) => {
-  if (event.relatedTarget && event.relatedTarget.classList.contains('btn-editar')) {
-    return;
+// Preparar el formulario al agregar una película nueva.
+const botonAgregar = document.querySelector('[data-bs-target="#exampleModal"]');
+botonAgregar.addEventListener('click', () => {
+  idEditando = null;
+  campoId.value = '';
+  formPelicula.reset();
+  document.getElementById('exampleModalLabel').textContent = '🍿 Agregar película';
+});
+
+// Un solo evento para los botones que se crean en la tabla.
+tablaPeliculas.addEventListener('click', async (e) => {
+  const botonEditar = e.target.closest('.btn-editar');
+  const botonEliminar = e.target.closest('.btn-cine');
+
+  if (botonEditar) {
+    const pelicula = peliculasGuardadas.find(p => String(p.id) === botonEditar.dataset.id);
+    if (!pelicula) return;
+
+    idEditando = pelicula.id;
+    campoId.value = pelicula.id;
+    campoTitulo.value = pelicula.titulo;
+    campoURL.value = pelicula.url;
+    campoGenero.value = pelicula.genero;
+    campoDuracion.value = pelicula.duracion;
+    campoHorario.value = pelicula.horario;
+    campoEstado.value = pelicula.estado;
+    campoSala.value = pelicula.sala;
+    campoPrecio.value = pelicula.precio;
+    document.getElementById('exampleModalLabel').textContent = '🍿 Editar película';
+    modalBootstrap.show();
   }
 
-  idEditando = null;
-  inputId.value = '';
-  formPelicula.reset();
+  if (botonEliminar) {
+    const pelicula = peliculasGuardadas.find(p => String(p.id) === botonEliminar.dataset.id);
+    if (!pelicula) return;
+
+    if (!confirm(`¿Quieres eliminar la película "${pelicula.titulo}"?`)) return;
+    const eliminada = await deleteData(pelicula.id);
+    if (eliminada) {
+      await cargarPeliculas();
+    } else {
+      alert('No se pudo eliminar la película. Revisa JSON Server.');
+    }
+  }
 });
 
 formPelicula.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const nuevaPelicula = {
-    url: campoPoster.value.trim(),
+  const datosPelicula = {
+    url: campoURL.value.trim(),
     titulo: campoTitulo.value.trim(),
     genero: campoGenero.value,
     duracion: campoDuracion.value.trim(),
@@ -103,13 +140,30 @@ formPelicula.addEventListener('submit', async (e) => {
     estado: campoEstado.value
   };
 
+  let guardada;
   if (idEditando === null) {
-    const creada = await store(nuevaPelicula);
-    if (creada) {
-      document.activeElement?.blur();
-      modalBootstrap.hide();
-      formPelicula.reset();
-      await cargarPeliculas();
-    }
+    guardada = await store(datosPelicula);
+  } else {
+    // Conservamos otros datos que pudiera tener la película.
+    const original = peliculasGuardadas.find(p => String(p.id) === String(idEditando));
+    guardada = await update(idEditando, { ...original, ...datosPelicula });
   }
+
+  if (guardada) {
+    document.activeElement?.blur();
+    modalBootstrap.hide();
+    formPelicula.reset();
+    idEditando = null;
+    await cargarPeliculas();
+  } else {
+    alert('No se pudieron guardar los cambios. Revisa JSON Server.');
+  }
+});
+
+// Cerrar sesión elimina el dato utilizado para proteger el administrador.
+const botonCerrarSesion = document.getElementById('cerrarSesion');
+botonCerrarSesion.addEventListener('click', (e) => {
+  e.preventDefault();
+  sessionStorage.removeItem('cine_sesion');
+  window.location.replace('../index.html');
 });

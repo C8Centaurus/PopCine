@@ -1,6 +1,6 @@
 :root{
-  --rojo:#D8232A;
-  --rojo-oscuro:#A5151B;
+  --rojo:#fac000;
+  --rojo-oscuro:#fac000d5;
 }
  
 /* ====== Fondo: sala oscura con el haz de luz del proyector ====== */
@@ -46,9 +46,9 @@ body::before{
 .cubeta:focus-visible{ outline:3px solid #ffc107; outline-offset:8px; }
 .balde{
   height:108cqw;
-  background:linear-gradient(90deg, #A5151B, #D8232A 30%, #EE4046 50%, #D8232A 70%, #A5151B);
+  background:linear-gradient(90deg, #eea404, #ffa41d 30%, #fcba05f1 50%, #f7a309 70%, #f8ba0f);
   clip-path:polygon(0 0, 100% 0, 88% 100%, 12% 100%);
-  border-top:5.8cqw solid #A5151B;
+  border-top:5.8cqw solid #fdad18;
   display:grid;
   place-items:center;
 }

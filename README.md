@@ -69,6 +69,7 @@ Centraliza las peticiones HTTP hacia `http://localhost:8080/peliculas` mediante 
 * `update(id, pelicula)` — `PUT`: Actualiza una película existente por `id`.
 * `deleteData(id)` — `DELETE`: Elimina una película por `id`.
 
+*  `npx json-server Json-Server/db.json --port 8080`
 ---
 
 ## Puesta en marcha
@@ -80,3 +81,4 @@ Centraliza las peticiones HTTP hacia `http://localhost:8080/peliculas` mediante 
 3. **Acceder al panel admin:**
    Navega a `pages/login.html` (o desde el ícono de administrador en la barra superior) e inicia sesión con las credenciales de prueba.
 ````[cite: 1, 2, 3]
+

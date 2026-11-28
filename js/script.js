@@ -33,8 +33,8 @@ function renderizarPeliculas(peliculas) {
                         ${peli.sala} | Horario: ${peli.horario}<br>
                         <span class="precio">$${precioFormateado}</span>
                     </p>
-                    <a href="#sala" class="btn btn_asientos" data-id="${peli.id}">
-                        Seleccionar Asientos
+                    <a href="./pages/loginU.html" class="btn btn_asientos" data-id="${peli.id}">
+                        🍿 Reservar
                     </a>
                 </article>
             </div>
